@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Automation Test Suite</th></tr>
+<tr><td><a href="#t0">Regression Tests execution over Chrome    Browser</a></td><td class="num">4</td><td class="num">0</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">179,864</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Regression Tests execution over Edge    Browser</a></td><td class="num">4</td><td class="num">0</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">194,013</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">8</th><th class="num">0</th><th class="num attn">2</th><th class="num attn">2</th><th class="num">373,877</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Automation Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Regression Tests execution over Chrome    Browser &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">org.selenium.tests.BookCartTests</td><td><a href="#m0">verifyProduct</a></td><td rowspan="1">1713703118126</td><td rowspan="1">23034</td></tr><tr><th colspan="4">Regression Tests execution over Chrome    Browser &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">org.selenium.tests.BookCartTests</td><td><a href="#m1">verifyProduct</a></td><td rowspan="1">1713703091227</td><td rowspan="1">22796</td></tr><tr><th colspan="4">Regression Tests execution over Chrome    Browser &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">org.selenium.tests.BookCartTests</td><td><a href="#m2">searchAndAddTocart</a></td><td rowspan="4">1713702994018</td><td rowspan="4">19626</td></tr><tr class="passedeven"><td><a href="#m3">searchAndAddTocart</a></td></tr><tr class="passedeven"><td><a href="#m4">searchAndAddTocart</a></td></tr><tr class="passedeven"><td><a href="#m5">searchAndAddTocart</a></td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Regression Tests execution over Edge    Browser &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">org.selenium.tests.BookCartTests</td><td><a href="#m6">verifyProduct</a></td><td rowspan="1">1713703128296</td><td rowspan="1">28750</td></tr><tr><th colspan="4">Regression Tests execution over Edge    Browser &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">org.selenium.tests.BookCartTests</td><td><a href="#m7">verifyProduct</a></td><td rowspan="1">1713703095161</td><td rowspan="1">24979</td></tr><tr><th colspan="4">Regression Tests execution over Edge    Browser &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">org.selenium.tests.BookCartTests</td><td><a href="#m8">searchAndAddTocart</a></td><td rowspan="4">1713702993915</td><td rowspan="4">18704</td></tr><tr class="passedeven"><td><a href="#m9">searchAndAddTocart</a></td></tr><tr class="passedeven"><td><a href="#m10">searchAndAddTocart</a></td></tr><tr class="passedeven"><td><a href="#m11">searchAndAddTocart</a></td></tr></tbody>
+</table>
+<h2>Regression Tests execution over Chrome    Browser</h2><h3 id="m0">org.selenium.tests.BookCartTests#verifyProduct</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //strong[contains(text(),&apos;₹1,201.00&apos;)] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.124, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\SHREE\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62018}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62018/devtoo..., se:cdpVersion: 123.0.6312.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f9f08b0760a328d5ffecf8f314dc65b2
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at org.selenium.factories.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:27)
+	at org.selenium.pages.BasePage.getText(BasePage.java:117)
+	at org.selenium.pages.CartPage.getInitialTotalPrice(CartPage.java:54)
+	at org.selenium.tests.BookCartTests.verifyProduct(BookCartTests.java:51)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">org.selenium.tests.BookCartTests#verifyProduct</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //strong[contains(text(),&apos;₹1,201.00&apos;)] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.124, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\SHREE\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61931}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61931/devtoo..., se:cdpVersion: 123.0.6312.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a970bbf272c6477304f840580407752b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at org.selenium.factories.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:27)
+	at org.selenium.pages.BasePage.getText(BasePage.java:117)
+	at org.selenium.pages.CartPage.getInitialTotalPrice(CartPage.java:54)
+	at org.selenium.tests.BookCartTests.verifyProduct(BookCartTests.java:51)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">org.selenium.tests.BookCartTests#searchAndAddTocart</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>JKR</td><td>Harry Potter and the Chamber of Secrets</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">org.selenium.tests.BookCartTests#searchAndAddTocart</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>JKR</td><td>Harry Potter and the Prisoner of Azkaban</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">org.selenium.tests.BookCartTests#searchAndAddTocart</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>JKR</td><td>Harry Potter and the Order of the Phoenix</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">org.selenium.tests.BookCartTests#searchAndAddTocart</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>JKR</td><td>Harry Potter and the Goblet of Fire</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Regression Tests execution over Edge    Browser</h2><h3 id="m6">org.selenium.tests.BookCartTests#verifyProduct</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //strong[contains(text(),&apos;₹1,201.00&apos;)] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:62048}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\SHREE\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62048/devtoo..., se:cdpVersion: 124.0.2478.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e51db36bf166e3e05cea22aad20234ab
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at org.selenium.factories.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:27)
+	at org.selenium.pages.BasePage.getText(BasePage.java:117)
+	at org.selenium.pages.CartPage.getInitialTotalPrice(CartPage.java:54)
+	at org.selenium.tests.BookCartTests.verifyProduct(BookCartTests.java:51)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">org.selenium.tests.BookCartTests#verifyProduct</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //strong[contains(text(),&apos;₹1,201.00&apos;)] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61956}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\SHREE\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61956/devtoo..., se:cdpVersion: 124.0.2478.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d783707acbc49c8247b555589895de7f
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at org.selenium.factories.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:27)
+	at org.selenium.pages.BasePage.getText(BasePage.java:117)
+	at org.selenium.pages.CartPage.getInitialTotalPrice(CartPage.java:54)
+	at org.selenium.tests.BookCartTests.verifyProduct(BookCartTests.java:51)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">org.selenium.tests.BookCartTests#searchAndAddTocart</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>JKR</td><td>Harry Potter and the Chamber of Secrets</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">org.selenium.tests.BookCartTests#searchAndAddTocart</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>JKR</td><td>Harry Potter and the Order of the Phoenix</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">org.selenium.tests.BookCartTests#searchAndAddTocart</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>JKR</td><td>Harry Potter and the Prisoner of Azkaban</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">org.selenium.tests.BookCartTests#searchAndAddTocart</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>JKR</td><td>Harry Potter and the Goblet of Fire</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
